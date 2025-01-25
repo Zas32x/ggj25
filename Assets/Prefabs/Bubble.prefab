@@ -151,11 +151,6 @@ GameObject:
   - component: {fileID: 188167998140177883}
   - component: {fileID: 6427299068973423849}
   - component: {fileID: 5307608914048234948}
-  - component: {fileID: 7342182809169136199}
-  - component: {fileID: 120626626511575921}
-  - component: {fileID: 6335398770657501333}
-  - component: {fileID: 29325785280438069}
-  - component: {fileID: 9131337898271358244}
   m_Layer: 3
   m_Name: BubbleModel
   m_TagString: Untagged
@@ -254,8 +249,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7342182809169136199}
-  - component: {fileID: 8565777258698390065}
   - component: {fileID: 29325785280438069}
+  - component: {fileID: 8565777258698390065}
   - component: {fileID: 9131337898271358244}
   m_Layer: 3
   m_Name: Bubble
@@ -281,27 +276,6 @@ Transform:
   - {fileID: 5485768086146715001}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &8565777258698390065
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8410395865685660034}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &29325785280438069
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -329,6 +303,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!135 &8565777258698390065
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8410395865685660034}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &9131337898271358244
 MonoBehaviour:
   m_ObjectHideFlags: 0

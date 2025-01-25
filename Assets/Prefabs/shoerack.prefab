@@ -59,6 +59,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7cf7538d8f1212145b36c40f9aacd611, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6660119929429007459}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7cf7538d8f1212145b36c40f9aacd611, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6087034561211087316}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7cf7538d8f1212145b36c40f9aacd611, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2741976196414831325}
     - targetCorrespondingSourceObject: {fileID: -7228696027894613823, guid: 7cf7538d8f1212145b36c40f9aacd611, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3579858728803996448}
@@ -151,6 +157,40 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &6087034561211087316
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622437607399992636}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 0.20477152, z: 0.37336046}
+  m_Center: {x: 0, y: 0.1954782, z: 0.02536878}
+--- !u!114 &2741976196414831325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622437607399992636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15b5e83b6930f714ca0de9861fc30772, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coll: {fileID: 6087034561211087316}
 --- !u!1 &2442439430819282433 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4926887409236218260, guid: 7cf7538d8f1212145b36c40f9aacd611, type: 3}
