@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{bf022159-eb13-4e4f-894e-ba025ea41819}">
+		<property name="assetPath">
+			<value>Cartoon, Misc, Arrow, Bow, Release, Whizz By, Hit Target With Twang SND15050.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.32994791666666667</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{7da8541e-760d-4942-a2ae-c1e864212891}</destination>
+		</relationship>
+	</object>
+</objects>
