@@ -6,7 +6,7 @@ public class BubbleController : MonoBehaviour
 
     Rigidbody rb;
     float speed = 10;
-    float maxSpeed = 100;
+    float maxSpeed = 50;
     float fallSpeed = 3;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -20,11 +20,11 @@ public class BubbleController : MonoBehaviour
     {
         if (Input.GetButton("Horizontal"))
         {
-            rb.AddForce(new Vector3(Input.GetAxis("Horizontal") * speed, 0, 0), ForceMode.Acceleration);
+            rb.AddForce(Camera.main.transform.right * Input.GetAxis("Horizontal") * speed, ForceMode.Acceleration);
         }
         if (Input.GetButton("Vertical"))
         {
-            rb.AddForce(new Vector3(0, 0, Input.GetAxis("Vertical") * speed), ForceMode.Acceleration);
+            rb.AddForce(Camera.main.transform.forward * Input.GetAxis("Vertical") * speed, ForceMode.Acceleration);
         }
         if (Input.GetButton("Jump"))
         {
@@ -39,5 +39,6 @@ public class BubbleController : MonoBehaviour
         {
             rb.linearVelocity = rb.linearVelocity.normalized * maxSpeed;
         }
+        
     }
 }
