@@ -13,6 +13,8 @@ public class FurnitureBehaviour : MonoBehaviour
     float underCenterAngularDrag = 1;
     float overCenterDrag = 0;
     float overCenterAngularDrag = 0.05f;
+    
+    bool sentOut = false;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -66,8 +68,9 @@ public class FurnitureBehaviour : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Goal")
+        if (other.tag == "Goal" && !sentOut)
         {
+            sentOut = true;
             GameManager.Instance.FurnitureMovedOut();
             Destroy(gameObject);
         }

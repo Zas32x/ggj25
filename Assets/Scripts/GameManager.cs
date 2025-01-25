@@ -47,9 +47,11 @@ public class GameManager : MonoBehaviour
 
     public void FurnitureMovedOut()
     {
-        --furnitureMovedOut;
-        if (furnitureMovedOut <= 0)
+        ++furnitureMovedOut;
+        Debug.Log($"Furniture Moved Out: {furnitureMovedOut} / {furnitureCount}");
+        if (furnitureMovedOut >= furnitureCount)
         {
+            Debug.Log("All Furniture Moved Out");
             // win at life
         }
     }
