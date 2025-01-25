@@ -96,6 +96,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3716371804351374080}
   - component: {fileID: 6677493369306510056}
+  - component: {fileID: 4019092234171353231}
+  - component: {fileID: 4832563498298655068}
   m_Layer: 9
   m_Name: GalaxyCola
   m_TagString: Untagged
@@ -139,7 +141,7 @@ Rigidbody:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
@@ -147,6 +149,40 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &4019092234171353231
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4096275493984434618}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.12665558, y: 0.5509386, z: 0.12447262}
+  m_Center: {x: -0.03243828, y: 0.2245307, z: -0.024094105}
+--- !u!114 &4832563498298655068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4096275493984434618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15b5e83b6930f714ca0de9861fc30772, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coll: {fileID: 4019092234171353231}
 --- !u!1 &9031870865574985679
 GameObject:
   m_ObjectHideFlags: 0
