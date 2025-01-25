@@ -8,6 +8,8 @@ public class BubbleController : MonoBehaviour
     float speed = 10;
     float maxSpeed = 50;
     float fallSpeed = 3;
+    Vector3 velocity;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -39,6 +41,12 @@ public class BubbleController : MonoBehaviour
         {
             rb.linearVelocity = rb.linearVelocity.normalized * maxSpeed;
         }
-        
+        velocity = rb.linearVelocity;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        //Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA velocity: " + rb.linearVelocity + " vs. " + velocity);
+        rb.linearVelocity = Vector3.Reflect(velocity, collision.contacts[0].normal);
     }
 }
