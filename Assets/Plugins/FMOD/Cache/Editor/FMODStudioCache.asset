@@ -1,5 +1,25 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7302230714342140662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambience.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/GGJ_2025_FMOD_BubbleMovingCompany/Build/Desktop/Ambience.bank
+  Name: Ambience
+  StudioPath: bank:/Ambience
+  lastModified: 638734112069770441
+  FileSizes:
+  - Name: Desktop
+    Value: 262240
+  Exists: 1
 --- !u!114 &-6666414274251904191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43,7 +63,7 @@ MonoBehaviour:
     Data3: 1862240664
     Data4: 1743871490
   Banks:
-  - {fileID: -2902211556438059572}
+  - {fileID: 7006752450952776518}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -75,7 +95,7 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &-2902211556438059572
+--- !u!114 &-2812228200328793063
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85,15 +105,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/UI.bank
+  m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: Assets/FMOD/GGJ_2025_FMOD_BubbleMovingCompany/Build/Desktop/UI.bank
-  Name: UI
-  StudioPath: bank:/UI
-  lastModified: 638734043468890481
+  Path: FMOD/GGJ_2025_FMOD_BubbleMovingCompany/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638734112069820338
   FileSizes:
   - Name: Desktop
-    Value: 72896
+    Value: 1366
   Exists: 1
 --- !u!114 &-2760573337488996828
 MonoBehaviour:
@@ -114,7 +134,7 @@ MonoBehaviour:
     Data3: -2099817300
     Data4: 13813724
   Banks:
-  - {fileID: 4277838218079617383}
+  - {fileID: -145093345436263314}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -142,7 +162,7 @@ MonoBehaviour:
     Data3: 353294264
     Data4: 1504009054
   Banks:
-  - {fileID: 4277838218079617383}
+  - {fileID: -145093345436263314}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -150,6 +170,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-145093345436263314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Bubble.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/GGJ_2025_FMOD_BubbleMovingCompany/Build/Desktop/Bubble.bank
+  Name: Bubble
+  StudioPath: bank:/Bubble
+  lastModified: 638734112069795211
+  FileSizes:
+  - Name: Desktop
+    Value: 454208
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,11 +203,11 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 5105100316536913218}
-  - {fileID: 3124257725324704777}
-  - {fileID: 4277838218079617383}
-  - {fileID: 5161839678664085187}
-  - {fileID: -2902211556438059572}
+  - {fileID: -2812228200328793063}
+  - {fileID: -7302230714342140662}
+  - {fileID: -145093345436263314}
+  - {fileID: 176593812870430098}
+  - {fileID: 7006752450952776518}
   EditorEvents:
   - {fileID: 6638419608022839060}
   - {fileID: 442047805101918300}
@@ -179,10 +219,10 @@ MonoBehaviour:
   - {fileID: 1355550290779759790}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 5161839678664085187}
+  - {fileID: 176593812870430098}
   StringsBanks:
-  - {fileID: 5105100316536913218}
-  cacheTime: 638734043468890481
+  - {fileID: -2812228200328793063}
+  cacheTime: 638734112069830329
   cacheVersion: 131607
 --- !u!114 &62109700260837334
 MonoBehaviour:
@@ -203,7 +243,7 @@ MonoBehaviour:
     Data3: 175474570
     Data4: -669832822
   Banks:
-  - {fileID: 4277838218079617383}
+  - {fileID: -145093345436263314}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -211,6 +251,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1125
+--- !u!114 &176593812870430098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/GGJ_2025_FMOD_BubbleMovingCompany/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638734112069810286
+  FileSizes:
+  - Name: Desktop
+    Value: 1510
+  Exists: 1
 --- !u!114 &315182868703590502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,7 +290,7 @@ MonoBehaviour:
     Data3: 1221751950
     Data4: 1618142827
   Banks:
-  - {fileID: 4277838218079617383}
+  - {fileID: -145093345436263314}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -257,7 +317,7 @@ MonoBehaviour:
     Data3: 1903834006
     Data4: 2090935265
   Banks:
-  - {fileID: 4277838218079617383}
+  - {fileID: -145093345436263314}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -286,7 +346,7 @@ MonoBehaviour:
     Data3: -798363732
     Data4: 1836481008
   Banks:
-  - {fileID: -2902211556438059572}
+  - {fileID: 7006752450952776518}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -294,46 +354,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1625
---- !u!114 &3124257725324704777
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Ambience.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/GGJ_2025_FMOD_BubbleMovingCompany/Build/Desktop/Ambience.bank
-  Name: Ambience
-  StudioPath: bank:/Ambience
-  lastModified: 638734043463701142
-  FileSizes:
-  - Name: Desktop
-    Value: 262240
-  Exists: 1
---- !u!114 &4277838218079617383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Bubble.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/GGJ_2025_FMOD_BubbleMovingCompany/Build/Desktop/Bubble.bank
-  Name: Bubble
-  StudioPath: bank:/Bubble
-  lastModified: 638734043468168790
-  FileSizes:
-  - Name: Desktop
-    Value: 454208
-  Exists: 1
 --- !u!114 &4916218102591681542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -358,46 +378,6 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &5105100316536913218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/GGJ_2025_FMOD_BubbleMovingCompany/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638734043468211717
-  FileSizes:
-  - Name: Desktop
-    Value: 1366
-  Exists: 1
---- !u!114 &5161839678664085187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/FMOD/GGJ_2025_FMOD_BubbleMovingCompany/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638734043468207443
-  FileSizes:
-  - Name: Desktop
-    Value: 1510
-  Exists: 1
 --- !u!114 &6638419608022839060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -417,7 +397,7 @@ MonoBehaviour:
     Data3: 525579421
     Data4: 867247238
   Banks:
-  - {fileID: 3124257725324704777}
+  - {fileID: -7302230714342140662}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -425,3 +405,23 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 20000
+--- !u!114 &7006752450952776518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/UI.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/GGJ_2025_FMOD_BubbleMovingCompany/Build/Desktop/UI.bank
+  Name: UI
+  StudioPath: bank:/UI
+  lastModified: 638734112069830329
+  FileSizes:
+  - Name: Desktop
+    Value: 72896
+  Exists: 1
