@@ -1,11 +1,15 @@
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
-{
+public class GameManager : MonoBehaviour {
+    [SerializeField]
+    public float victoryPercentage = 0.7f;
+
     private static GameManager inst = null;
 
     private int furnitureCount = 0;
     private int furnitureMovedOut = 0;
+    
+    private bool victoryAchieved = false;
     
     public static GameManager Instance
     {
@@ -49,6 +53,10 @@ public class GameManager : MonoBehaviour
     {
         ++furnitureMovedOut;
         Debug.Log($"Furniture Moved Out: {furnitureMovedOut} / {furnitureCount}");
+        if (!victoryAchieved && furnitureMovedOut >= furnitureCount * victoryPercentage) { 
+            Debug.Log("victory");
+            // ask to move out 100%
+        }
         if (furnitureMovedOut >= furnitureCount)
         {
             Debug.Log("All Furniture Moved Out");

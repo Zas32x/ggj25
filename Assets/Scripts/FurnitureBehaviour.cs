@@ -15,8 +15,7 @@ public class FurnitureBehaviour : MonoBehaviour
     float overCenterAngularDrag = 0.05f;
     
     bool sentOut = false;
-
-
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
