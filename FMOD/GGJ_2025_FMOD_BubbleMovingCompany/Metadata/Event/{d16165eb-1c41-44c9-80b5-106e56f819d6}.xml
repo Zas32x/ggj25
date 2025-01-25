@@ -154,6 +154,12 @@
 		<property name="lowGain">
 			<value>-11</value>
 		</property>
+		<property name="midGain">
+			<value>-1</value>
+		</property>
+		<property name="lowCrossover">
+			<value>200</value>
+		</property>
 	</object>
 	<object class="MixerBusFader" id="{1fd9841c-37c0-4477-9aee-3b9b768cd91b}" />
 </objects>
