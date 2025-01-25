@@ -151,6 +151,11 @@ GameObject:
   - component: {fileID: 188167998140177883}
   - component: {fileID: 6427299068973423849}
   - component: {fileID: 5307608914048234948}
+  - component: {fileID: 7342182809169136199}
+  - component: {fileID: 120626626511575921}
+  - component: {fileID: 6335398770657501333}
+  - component: {fileID: 29325785280438069}
+  - component: {fileID: 9131337898271358244}
   m_Layer: 3
   m_Name: BubbleModel
   m_TagString: Untagged
