@@ -100,6 +100,8 @@ GameObject:
   - component: {fileID: 2241824956479124618}
   - component: {fileID: 7058416618668359232}
   - component: {fileID: 669517913694953333}
+  - component: {fileID: 7918391478991973734}
+  - component: {fileID: 659202324208806051}
   m_Layer: 0
   m_Name: Toast
   m_TagString: Untagged
@@ -163,7 +165,7 @@ BoxCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -171,3 +173,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.1874499, y: 0.03140436, z: 0.1736983}
   m_Center: {x: 0, y: 0.016, z: 0}
+--- !u!65 &7918391478991973734
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6864731269002348446}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.1874499, y: 0.03140436, z: 0.1736983}
+  m_Center: {x: 0, y: 0.016, z: 0}
+--- !u!114 &659202324208806051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6864731269002348446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15b5e83b6930f714ca0de9861fc30772, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coll: {fileID: 7918391478991973734}

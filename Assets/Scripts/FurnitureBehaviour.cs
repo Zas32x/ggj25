@@ -13,12 +13,15 @@ public class FurnitureBehaviour : MonoBehaviour
     float underCenterAngularDrag = 1;
     float overCenterDrag = 0;
     float overCenterAngularDrag = 0.05f;
-
-
+    
+    bool sentOut = false;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+
+        GameManager.Instance.RegisterFurniture();
     }
 
     // Update is called once per frame
@@ -26,38 +29,49 @@ public class FurnitureBehaviour : MonoBehaviour
     {
         if (container != null)
         {
-            //float heightDifference = transform.position.y - container.GetComponent<Collider>().bounds.center.y;
+            float heightDifference = transform.position.y - container.GetComponent<Collider>().bounds.center.y;
 
-            //if (heightDifference < 0)
-            //{
-            //    rb.AddForceAtPosition(Vector3.up * floatForce * Mathf.Abs(heightDifference), transform.position, ForceMode.Force);
-            //    if (!underCenter)
-            //    {
-            //        underCenter = true;
-            //        SwitchFloatMode(underCenter);
-            //    }
-            //}
-            //else if (underCenter)
-            //{
-            //    underCenter = false;
-            //    SwitchFloatMode(underCenter);
-            //}
+            if (heightDifference < 0)
+            {
+                rb.AddForceAtPosition(Vector3.up * floatForce * Mathf.Abs(heightDifference), transform.position, ForceMode.Force);
+                if (!underCenter)
+                {
+                    underCenter = true;
+                    SwitchFloatMode(underCenter);
+                }
+            }
+            else if (underCenter)
+            {
+                underCenter = false;
+                SwitchFloatMode(underCenter);
+            }
 
             Debug.Log("Floating");
-            rb.AddForce((container.transform.position - transform.position) * floatForce, ForceMode.Acceleration);
-            rb.AddForce(container.GetComponent<Rigidbody>().linearVelocity, ForceMode.Force);
+            //rb.AddForce((container.transform.position - transform.position) * floatForce, ForceMode.Acceleration);
+            Vector3 horizontalVelocity = new Vector3(container.transform.position.x - transform.position.x, 0, container.transform.position.z - transform.position.z); //new Vector3(container.GetComponent<Rigidbody>().linearVelocity.x, 0, container.GetComponent<Rigidbody>().linearVelocity.z);
+            rb.AddForce(horizontalVelocity * 50.2f, ForceMode.Force);
         }
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag=="Player")
         {
             if (other.bounds.Contains(coll.bounds.max) && other.bounds.Contains(coll.bounds.min))
             {
                 container = other.gameObject;
                 //rb.useGravity = false;
             }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Goal" && !sentOut)
+        {
+            sentOut = true;
+            GameManager.Instance.FurnitureMovedOut();
+            Destroy(gameObject);
         }
     }
 
