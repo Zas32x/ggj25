@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{42692d2b-e9e3-4285-be84-22177e9adafd}">
+		<property name="assetPath">
+			<value>Bubble/Collect3.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.62324263038548755</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{7da8541e-760d-4942-a2ae-c1e864212891}</destination>
+		</relationship>
+	</object>
+</objects>

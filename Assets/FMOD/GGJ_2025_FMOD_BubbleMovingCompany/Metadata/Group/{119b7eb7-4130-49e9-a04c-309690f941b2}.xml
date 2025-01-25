@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{119b7eb7-4130-49e9-a04c-309690f941b2}">
+		<property name="name">
+			<value>Bounce</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{1823f92c-8493-44f1-9210-d29ee1f71eb9}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{d908f5c7-91b0-4abf-85e1-4fff406062be}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{bc1bd5bd-3494-4537-b248-9a7558afdde3}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{1823f92c-8493-44f1-9210-d29ee1f71eb9}">
+		<relationship name="effects">
+			<destination>{b0147afc-21b7-4c1c-93e9-2c5003724c60}</destination>
+			<destination>{072b2d76-6ed7-4c96-a40b-2ea8b0b19d7d}</destination>
+			<destination>{e8a4c9cb-a197-4a30-b9d6-f8b727ea1ced}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{d908f5c7-91b0-4abf-85e1-4fff406062be}" />
+	<object class="SFXReverbEffect" id="{b0147afc-21b7-4c1c-93e9-2c5003724c60}">
+		<property name="decayTime">
+			<value>500</value>
+		</property>
+		<property name="wetLevel">
+			<value>-17.5</value>
+		</property>
+	</object>
+	<object class="DelayEffect" id="{072b2d76-6ed7-4c96-a40b-2ea8b0b19d7d}">
+		<property name="bypass">
+			<value>true</value>
+		</property>
+		<property name="delay">
+			<value>9.60000038</value>
+		</property>
+		<property name="level">
+			<value>-18.5</value>
+		</property>
+	</object>
+	<object class="MixerBusFader" id="{e8a4c9cb-a197-4a30-b9d6-f8b727ea1ced}" />
+</objects>
