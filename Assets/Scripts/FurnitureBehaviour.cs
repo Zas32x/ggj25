@@ -19,6 +19,8 @@ public class FurnitureBehaviour : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+
+        GameManager.Instance.RegisterFurniture();
     }
 
     // Update is called once per frame
@@ -52,13 +54,22 @@ public class FurnitureBehaviour : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag=="Player")
         {
             if (other.bounds.Contains(coll.bounds.max) && other.bounds.Contains(coll.bounds.min))
             {
                 container = other.gameObject;
                 //rb.useGravity = false;
             }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Goal")
+        {
+            GameManager.Instance.FurnitureMovedOut();
+            Destroy(gameObject);
         }
     }
 

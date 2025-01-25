@@ -4,6 +4,9 @@ public class GameManager : MonoBehaviour
 {
     private static GameManager inst = null;
 
+    private int furnitureCount = 0;
+    private int furnitureMovedOut = 0;
+    
     public static GameManager Instance
     {
         get
@@ -26,6 +29,11 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    public void RegisterFurniture()
+    {
+        ++furnitureCount;
+    }
+
     public void FadeActionHandler(int level)
     {
         if (level < 0)
@@ -37,4 +45,12 @@ public class GameManager : MonoBehaviour
         UnityEngine.SceneManagement.SceneManager.LoadScene(level);
     }
 
+    public void FurnitureMovedOut()
+    {
+        --furnitureMovedOut;
+        if (furnitureMovedOut <= 0)
+        {
+            // win at life
+        }
+    }
 }
