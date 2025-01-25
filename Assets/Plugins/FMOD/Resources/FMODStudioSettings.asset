@@ -252,6 +252,9 @@ MonoBehaviour:
   Banks:
   - Ambience
   - Bubble
+  - ObjectPick
+  - Objects
+  - ObjectsDrop
   - UI
   BanksToLoad: []
   LiveUpdatePort: 9264
