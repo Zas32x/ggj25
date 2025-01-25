@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{6497632b-3182-4260-9f2a-2c8793ad1594}">
 		<property name="name">
-			<value>TVDrop</value>
+			<value>FrameDrop</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="parameters">
 			<destination>{de356182-8cdf-4c04-a6d0-b2ba99aa3ac4}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{54cc8ca1-11d3-440e-9b07-8846fe56a583}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{1bbc9baa-c1f3-4c24-8bf5-ba68a7191819}">
@@ -98,6 +101,9 @@
 	</object>
 	<object class="MixerBusPanner" id="{98ae127b-8a27-4521-8b70-5c70dc70242e}" />
 	<object class="MultiSound" id="{b6174121-7ecf-4eb7-ba37-05faa51ae454}">
+		<property name="pitch">
+			<value>24</value>
+		</property>
 		<relationship name="sounds">
 			<destination>{e0080fd4-6263-491f-944f-98e8f13d4d88}</destination>
 			<destination>{296cf878-b2c5-4b25-a03e-d78107535f7b}</destination>
