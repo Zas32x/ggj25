@@ -26,26 +26,27 @@ public class FurnitureBehaviour : MonoBehaviour
     {
         if (container != null)
         {
-            //float heightDifference = transform.position.y - container.GetComponent<Collider>().bounds.center.y;
+            float heightDifference = transform.position.y - container.GetComponent<Collider>().bounds.center.y;
 
-            //if (heightDifference < 0)
-            //{
-            //    rb.AddForceAtPosition(Vector3.up * floatForce * Mathf.Abs(heightDifference), transform.position, ForceMode.Force);
-            //    if (!underCenter)
-            //    {
-            //        underCenter = true;
-            //        SwitchFloatMode(underCenter);
-            //    }
-            //}
-            //else if (underCenter)
-            //{
-            //    underCenter = false;
-            //    SwitchFloatMode(underCenter);
-            //}
+            if (heightDifference < 0)
+            {
+                rb.AddForceAtPosition(Vector3.up * floatForce * Mathf.Abs(heightDifference), transform.position, ForceMode.Force);
+                if (!underCenter)
+                {
+                    underCenter = true;
+                    SwitchFloatMode(underCenter);
+                }
+            }
+            else if (underCenter)
+            {
+                underCenter = false;
+                SwitchFloatMode(underCenter);
+            }
 
             Debug.Log("Floating");
-            rb.AddForce((container.transform.position - transform.position) * floatForce, ForceMode.Acceleration);
-            rb.AddForce(container.GetComponent<Rigidbody>().linearVelocity, ForceMode.Force);
+            //rb.AddForce((container.transform.position - transform.position) * floatForce, ForceMode.Acceleration);
+            Vector3 horizontalVelocity = new Vector3(container.transform.position.x - transform.position.x, 0, container.transform.position.z - transform.position.z); //new Vector3(container.GetComponent<Rigidbody>().linearVelocity.x, 0, container.GetComponent<Rigidbody>().linearVelocity.z);
+            rb.AddForce(horizontalVelocity * 50.2f, ForceMode.Force);
         }
     }
 
