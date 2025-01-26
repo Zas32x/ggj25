@@ -150,6 +150,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{304d067f-9739-4295-919d-96f058263100}">
+		<property name="volume">
+			<value>-6</value>
+		</property>
 		<property name="name">
 			<value>Bubble</value>
 		</property>
@@ -289,6 +292,7 @@
 	<object class="MixerBusFader" id="{c7039adc-4577-4346-ab9f-23dd789cf357}" />
 	<object class="MixerBusEffectChain" id="{3267a4d9-5b9a-400c-b266-e3978d3d44c2}">
 		<relationship name="effects">
+			<destination>{f2cbbd4c-0d97-48bd-ac71-0511d7717546}</destination>
 			<destination>{0cf3118e-de68-4dfb-abdd-9fd1de94064b}</destination>
 		</relationship>
 	</object>
@@ -339,6 +343,11 @@
 	<object class="MixerBusPanner" id="{db4d2271-195b-4e49-a394-ce62e7772e22}" />
 	<object class="MixerBusFader" id="{f7de40b9-3bb5-4b65-9c73-2f7290e10013}" />
 	<object class="SpatialiserEffect" id="{60245e81-1f57-4350-93b5-1f8243106b4d}" />
+	<object class="PitchShifterEffect" id="{f2cbbd4c-0d97-48bd-ac71-0511d7717546}">
+		<property name="pitch">
+			<value>0.699999988</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{0cf3118e-de68-4dfb-abdd-9fd1de94064b}" />
 	<object class="AutomationCurve" id="{8ed941e9-b5d4-41f7-88ba-f1f024101c4d}">
 		<relationship name="parameter">
@@ -397,7 +406,7 @@
 			<value>2.5</value>
 		</property>
 		<property name="value">
-			<value>0</value>
+			<value>-9.19999981</value>
 		</property>
 		<property name="curveShape">
 			<value>0.332630247</value>
@@ -438,10 +447,10 @@
 			<value>1</value>
 		</property>
 		<property name="value">
-			<value>-5</value>
+			<value>-3.4000001</value>
 		</property>
 		<property name="curveShape">
-			<value>0.208646566</value>
+			<value>0.311721981</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{0ccfa55f-2442-46be-a53c-ff3d16a46e0c}">
@@ -465,7 +474,7 @@
 			<value>4</value>
 		</property>
 		<property name="value">
-			<value>0</value>
+			<value>-2</value>
 		</property>
 		<property name="curveShape">
 			<value>0.299306303</value>
