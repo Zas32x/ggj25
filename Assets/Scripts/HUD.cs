@@ -2,47 +2,63 @@ using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class HUD : MonoBehaviour
 {
     [SerializeField] private TMP_Text progress;
-    [SerializeField] private TMP_Text done70;
-    [SerializeField] private TMP_Text done100;
+    [SerializeField] private TMP_Text progressLabel;
     [SerializeField] private float doneTextSeconds=7;
 
-    private bool shown70;
-    private bool shown100;
+    [SerializeField] private CompletionText[] completions;
+    
+    private IEnumerator currentEnumeration = null;
+    private float lastPercentage = 0;
     
     void Start()
     {
     }
 
-    public void UpdateProgress(float progressAmount, float victoryPercentage)
+    public void UpdateProgress(float progressAmount)
     { 
         progress.text = $"{(progressAmount*100):0}%";
-        if (progressAmount >= victoryPercentage && !shown70) {
-            shown70 = true;
-            ShowProgress(done70, doneTextSeconds);
+        for (int i = 0; i < completions.Length; i++)
+        { 
+            CompletionText completion = completions[i];
+            if (completion.percentage > lastPercentage && completion.percentage <= progressAmount)
+            {
+                ShowProgress(completion, progressAmount >= 1 ? 0 : doneTextSeconds);
+                break;
+            }
         }
-        if (progressAmount >= 1 && !shown100) {
-            done70.gameObject.SetActive(false);
-            shown100 = true;
-            ShowProgress(done100);
-        }
+
+        lastPercentage = progressAmount;
     }
 
-    private void ShowProgress(TMP_Text text, float hideTime=0)
+    private void ShowProgress(CompletionText completion, float hideTime)
     {
-        text.gameObject.SetActive(true);
+        progressLabel.gameObject.SetActive(true);
+        progressLabel.text = completion.text;
+        if (currentEnumeration != null)
+        { 
+            StopCoroutine(currentEnumeration);
+        }
         if (hideTime > 0)
         {
-            StartCoroutine(HideTextTimer(text, hideTime));
+            StartCoroutine(currentEnumeration = HideTextTimer(hideTime));
         }
     }
 
-    private IEnumerator HideTextTimer(TMP_Text text, float duration)
+    private IEnumerator HideTextTimer(float duration)
     {
         yield return new WaitForSeconds(duration);
-        text.gameObject.SetActive(false);
+        progressLabel.gameObject.SetActive(false);
+        currentEnumeration = null;
+    }
+
+    [Serializable]
+    public struct CompletionText { 
+        public string text;
+        public float percentage;
     }
 }
