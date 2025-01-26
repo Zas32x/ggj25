@@ -4,8 +4,6 @@ using UnityEngine;
 public class PlayManager : MonoBehaviour
 {
     [SerializeField]
-    public float victoryPercentage = 0.7f;
-    [SerializeField]
     public float endGameTimeout = 10f;
     [SerializeField]
     private HUD hud;
@@ -27,6 +25,10 @@ public class PlayManager : MonoBehaviour
         }
     }
 
+    public void Start()
+    {
+    }
+
     public void RegisterFurniture()
     {
         ++furnitureCount;
@@ -35,7 +37,7 @@ public class PlayManager : MonoBehaviour
     public void FurnitureMovedOut()
     {
         ++furnitureMovedOut;
-        hud?.UpdateProgress(furnitureMovedOut/(float)furnitureCount, victoryPercentage);
+        hud?.UpdateProgress(furnitureMovedOut/(float)furnitureCount);
         if (furnitureMovedOut >= furnitureCount)
         {
             StartCoroutine(EndLevel());

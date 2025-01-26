@@ -7,10 +7,15 @@ public class FadeController : MonoBehaviour
 {
     public float fadeTime = 1.0f;
     private Image image;
+    
+    [SerializeField] float fadeInTime = 0f;
 
     void Start()
     {
         image = GetComponent<Image>();
+        if (fadeInTime >= 0) {
+            StartFadeIn();
+        }
     }
 
     public void StartFade(int level)
@@ -31,5 +36,24 @@ public class FadeController : MonoBehaviour
 
         image.color = Color.black;
         GameManager.Instance.FadeActionHandler(level);
+    }
+
+    public void StartFadeIn()
+    {
+        StartCoroutine(FadeIn(fadeInTime));
+    }
+    
+    IEnumerator FadeIn(float initialDelay)
+    {
+        float t = -initialDelay;
+
+        while (t < fadeTime)
+        {
+            t += Time.deltaTime;
+            image.color = new Color(0, 0, 0,Mathf.Clamp( 1 - t / fadeTime,0,1));
+            yield return null;
+        }
+
+        image.color = Color.clear;
     }
 }

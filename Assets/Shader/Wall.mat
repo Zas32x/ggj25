@@ -79,14 +79,17 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
-    - _blurSize: 1.75
-    - _holeSize: 2.31
-    - _seeThroughOffset: 2.61
+    - _blackFade: -0.05
+    - _blackStart: -13.44
+    - _blurSize: 1.47
+    - _hideCloseWalls: 1
+    - _holeSize: 5.13
+    - _seeThroughOffset: 4.2
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _albedo: {r: 0.8792453, g: 0.8792453, b: 0.8792453, a: 1}
-    - _lookAt: {r: 2.32, g: 0.95, b: -2.69, a: 0}
+    - _lookAt: {r: -12.151361, g: 2.198844, b: -4.874339, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &778718066100145940
