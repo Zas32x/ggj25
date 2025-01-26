@@ -7,6 +7,8 @@ public class FadeController : MonoBehaviour
 {
     public float fadeTime = 1.0f;
     private Image image;
+    
+    [SerializeField] float fadeInTime = 0f;
 
     void Start()
     {
@@ -33,9 +35,9 @@ public class FadeController : MonoBehaviour
         GameManager.Instance.FadeActionHandler(level);
     }
 
-    public void StartFadeIn(float initialDelay = 0)
+    public void StartFadeIn()
     {
-        StartCoroutine(FadeIn(initialDelay));
+        StartCoroutine(FadeIn(fadeInTime));
     }
     
     IEnumerator FadeIn(float initialDelay)

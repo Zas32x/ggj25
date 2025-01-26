@@ -29,7 +29,7 @@ public class PlayManager : MonoBehaviour
 
     public void Start()
     {
-        fadeController.StartFadeIn(1);
+        fadeController.StartFadeIn();
     }
 
     public void RegisterFurniture()
