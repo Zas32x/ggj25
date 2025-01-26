@@ -1,5 +1,8 @@
 using System;
 using UnityEngine;
+using FMOD;
+using FMODUnity;
+
 
 public class BubbleController : MonoBehaviour
 {
@@ -18,6 +21,9 @@ public class BubbleController : MonoBehaviour
     Vector3 normalRange;
     bool isBlackHole = false;
 
+    [SerializeField] StudioEventEmitter floatingSound;
+    [SerializeField] StudioEventEmitter bounceSound;
+    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -32,6 +38,9 @@ public class BubbleController : MonoBehaviour
         {
             ToggleBlackHoleMode();
         }
+
+        floatingSound.SetParameter("Hight", transform.position.y) ;
+        floatingSound.SetParameter("Size", transform.position.y);
     }
 
     // Update is called once per frame
@@ -77,6 +86,7 @@ public class BubbleController : MonoBehaviour
     {
         //Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA velocity: " + rb.linearVelocity + " vs. " + velocity);
         rb.linearVelocity = Vector3.Reflect(velocity * 0.5f, collision.contacts[0].normal);
+        bounceSound.Play();
     }
 
     private void ToggleBlackHoleMode()

@@ -443,8 +443,8 @@ MonoBehaviour:
       Data4: -1740235504
     Path: event:/Objects Drop/PizzaDrop
   Event: 
-  PlayEvent: 3
-  StopEvent: 4
+  PlayEvent: 4
+  StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
