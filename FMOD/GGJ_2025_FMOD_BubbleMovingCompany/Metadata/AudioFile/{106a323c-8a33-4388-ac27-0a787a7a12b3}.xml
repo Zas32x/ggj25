@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{106a323c-8a33-4388-ac27-0a787a7a12b3}">
+		<property name="assetPath">
+			<value>Destruction, Crash &amp; Debris, Plates And Glass, Drop And Crush, Heavy SND1807.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>4.9401250000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{7da8541e-760d-4942-a2ae-c1e864212891}</destination>
+		</relationship>
+	</object>
+</objects>
