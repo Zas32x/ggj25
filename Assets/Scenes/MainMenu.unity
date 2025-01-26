@@ -1102,7 +1102,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bubble Move Ltd.
+  m_text: Bubble Moving Company
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ed457d745b2fb041a25b89f9207134e, type: 2}
   m_sharedMaterial: {fileID: -9021717893427018991, guid: 9ed457d745b2fb041a25b89f9207134e, type: 2}
