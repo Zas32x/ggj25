@@ -59,7 +59,11 @@
 			<destination>{bc1bd5bd-3494-4537-b248-9a7558afdde3}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{f59641b5-9a60-4d9e-bf8a-b3dc43ad196f}" />
+	<object class="EventAutomatableProperties" id="{f59641b5-9a60-4d9e-bf8a-b3dc43ad196f}">
+		<property name="isPersistent">
+			<value>true</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{d83bc489-8b73-4897-a1d7-09af055a19f4}" />
 	<object class="Timeline" id="{a68a7fe2-d865-48e0-bfc3-937f5d885bdc}">
 		<property name="isProxyEnabled">
@@ -115,7 +119,17 @@
 	</object>
 	<object class="MixerBusFader" id="{5b3d4dca-239a-4478-b05b-85876f2d56f9}" />
 	<object class="MixerBusFader" id="{c8ef337c-70c2-4b66-ad35-a50a997b98cc}" />
-	<object class="SpatialiserEffect" id="{1c0f336f-a238-4ed9-b9af-2d92e335905c}" />
+	<object class="SpatialiserEffect" id="{1c0f336f-a238-4ed9-b9af-2d92e335905c}">
+		<property name="minimumDistance">
+			<value>0</value>
+		</property>
+		<property name="maximumDistance">
+			<value>1</value>
+		</property>
+		<property name="overrideRange">
+			<value>true</value>
+		</property>
+	</object>
 	<object class="SingleSound" id="{e0080fd4-6263-491f-944f-98e8f13d4d88}">
 		<relationship name="audioFile">
 			<destination>{3866790c-e28f-4069-92af-8f582a7e1498}</destination>

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5817047868824580560}
   - component: {fileID: 4227111310203392464}
   - component: {fileID: 7390266722690402156}
+  - component: {fileID: 1555315921750438391}
   m_Layer: 0
   m_Name: Sofa
   m_TagString: Untagged
@@ -96,6 +97,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coll: {fileID: 4227111310203392464}
+--- !u!114 &1555315921750438391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7282068689303746174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -444691044
+      Data2: 1163015236
+      Data3: 386758290
+      Data4: -2009548918
+    Path: event:/Objects Drop/BedDrop
+  Event: 
+  PlayEvent: 4
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1348689262887984510
 PrefabInstance:
   m_ObjectHideFlags: 0

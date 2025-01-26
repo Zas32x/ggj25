@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5520824278664049444}
   - component: {fileID: 6795916322935439208}
   - component: {fileID: 875154515871262870}
+  - component: {fileID: -8302617000008063592}
   m_Layer: 0
   m_Name: SingleBed 1
   m_TagString: Untagged
@@ -96,6 +97,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coll: {fileID: 5520824278664049444}
+--- !u!114 &-8302617000008063592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5968978468569432408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -444691044
+      Data2: 1163015236
+      Data3: 386758290
+      Data4: -2009548918
+    Path: event:/Objects Drop/BedDrop
+  Event: 
+  PlayEvent: 4
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &7508700992618589056
 PrefabInstance:
   m_ObjectHideFlags: 0

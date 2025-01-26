@@ -77,7 +77,7 @@
 	</object>
 	<object class="EventMixerMaster" id="{2b7f477f-4f1c-4d24-af43-9a8127d766f2}">
 		<property name="volume">
-			<value>-12</value>
+			<value>-14</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{72ac5da8-57a3-40cc-95e4-8bd5474b93cb}</destination>
@@ -121,7 +121,7 @@
 			<value>0</value>
 		</property>
 		<property name="maximumDistance">
-			<value>3.60000014</value>
+			<value>2.60000014</value>
 		</property>
 		<property name="overrideRange">
 			<value>true</value>

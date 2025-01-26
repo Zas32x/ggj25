@@ -225,6 +225,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 507b6cdb7ae918a41824ad995f436b1e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8183729617479604388}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 507b6cdb7ae918a41824ad995f436b1e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -7665668116771010181}
     - targetCorrespondingSourceObject: {fileID: -8391222552659086748, guid: 507b6cdb7ae918a41824ad995f436b1e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5445779160026558785}
@@ -365,6 +368,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 15.521254, y: 1.8437372, z: 1}
   m_Center: {x: -0.90372086, y: 1.2705852, z: 0}
+--- !u!114 &-7665668116771010181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3503436916097380702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1687642923
+      Data2: 1113600386
+      Data3: -2027148641
+      Data4: -1810518637
+    Path: event:/Objects Drop/FrameDrop
+  Event: 
+  PlayEvent: 4
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &4022768958174559851 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8391222552659086748, guid: 507b6cdb7ae918a41824ad995f436b1e, type: 3}
