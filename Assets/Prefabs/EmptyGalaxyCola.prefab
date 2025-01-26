@@ -96,14 +96,6 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4254605800336121260, guid: b4593615da5b7c040a8dfda1f29e3ac6, type: 3}
-      propertyPath: m_ExcludeLayers.m_Bits
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4832563498298655068, guid: b4593615da5b7c040a8dfda1f29e3ac6, type: 3}
-      propertyPath: coll
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 9031870865574985679, guid: b4593615da5b7c040a8dfda1f29e3ac6, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
