@@ -60,6 +60,12 @@
 		<property name="isPersistent">
 			<value>true</value>
 		</property>
+		<property name="minimumDistance">
+			<value>0</value>
+		</property>
+		<property name="maximumDistance">
+			<value>10</value>
+		</property>
 	</object>
 	<object class="MarkerTrack" id="{d749a4ed-bc27-48bd-ab7c-9e210adf50b2}" />
 	<object class="GroupTrack" id="{d307215a-d2bd-44f4-9203-e3545b49b110}">
@@ -107,6 +113,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{87b8c011-4d7c-4fee-ba83-f6ab6b35e438}">
+		<property name="volume">
+			<value>-15</value>
+		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
@@ -140,14 +149,7 @@
 			<destination>{3786429f-3ee5-496b-9135-a7d47c9a7ea7}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{0808fd27-40cc-4ef4-99cc-a7b5fc22de42}">
-		<property name="surroundPanDirection">
-			<value>140.2677</value>
-		</property>
-		<property name="surroundPanExtent">
-			<value>340.931305</value>
-		</property>
-	</object>
+	<object class="MixerBusPanner" id="{0808fd27-40cc-4ef4-99cc-a7b5fc22de42}" />
 	<object class="MixerBusFader" id="{ffe28680-496b-4d59-87c1-59d543b8d513}" />
 	<object class="MixerBusEffectChain" id="{ca2a5ba8-8d82-41a3-ad43-e2d0718b61bb}">
 		<relationship name="effects">
@@ -159,10 +161,10 @@
 	<object class="MixerBusFader" id="{9282c17d-0171-4b53-bafb-08901d412bdf}" />
 	<object class="SpatialiserEffect" id="{3786429f-3ee5-496b-9135-a7d47c9a7ea7}">
 		<property name="minimumDistance">
-			<value>10</value>
+			<value>0</value>
 		</property>
 		<property name="maximumDistance">
-			<value>250</value>
+			<value>3</value>
 		</property>
 		<property name="overrideRange">
 			<value>true</value>
@@ -176,7 +178,7 @@
 			<value>-11</value>
 		</property>
 		<property name="midGain">
-			<value>-1</value>
+			<value>-8</value>
 		</property>
 		<property name="lowCrossover">
 			<value>200</value>
