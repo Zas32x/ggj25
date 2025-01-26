@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1055048374240025012}
   - component: {fileID: 5702687667918641605}
   - component: {fileID: 6711390905722051817}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Drink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 6677493369306510056}
   - component: {fileID: 4019092234171353231}
   - component: {fileID: 4832563498298655068}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: GalaxyCola
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,8 +168,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.12665558, y: 0.5509386, z: 0.12447262}
-  m_Center: {x: -0.03243828, y: 0.2245307, z: -0.024094105}
+  m_Size: {x: 0.12665558, y: 0.27125847, z: 0.082048416}
+  m_Center: {x: -0.03243828, y: 0.2708723, z: -0.0028820038}
 --- !u!114 &4832563498298655068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,7 +195,7 @@ GameObject:
   - component: {fileID: 8224618317290231021}
   - component: {fileID: 3536478962149203104}
   - component: {fileID: 4254605800336121260}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Bottle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
