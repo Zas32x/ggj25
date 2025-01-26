@@ -8,6 +8,7 @@ public class CameraController : MonoBehaviour
     public Vector2 sensitivity = Vector2.one * 360f;
 
     [SerializeField] GameObject pivot;
+    [SerializeField] GameObject target;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -18,6 +19,7 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        pivot.transform.position = target.transform.position;
         rotationY += Input.GetAxis("Mouse X") * Time.deltaTime * sensitivity.x;
         rotationX += Input.GetAxis("Mouse Y") * Time.deltaTime * -1 * sensitivity.y;
         pivot.transform.localEulerAngles = new Vector3(rotationX, rotationY, 0);
