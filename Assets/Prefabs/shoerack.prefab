@@ -65,6 +65,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7cf7538d8f1212145b36c40f9aacd611, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2741976196414831325}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7cf7538d8f1212145b36c40f9aacd611, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -2369295295632921277}
     - targetCorrespondingSourceObject: {fileID: -7228696027894613823, guid: 7cf7538d8f1212145b36c40f9aacd611, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3579858728803996448}
@@ -191,6 +194,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coll: {fileID: 6087034561211087316}
+--- !u!114 &-2369295295632921277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622437607399992636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1687642923
+      Data2: 1113600386
+      Data3: -2027148641
+      Data4: -1810518637
+    Path: event:/Objects Drop/FrameDrop
+  Event: 
+  PlayEvent: 4
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &2442439430819282433 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4926887409236218260, guid: 7cf7538d8f1212145b36c40f9aacd611, type: 3}

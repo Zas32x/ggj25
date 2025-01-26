@@ -254,13 +254,13 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1114984377
+      Data2: 1075764276
+      Data3: 1776240019
+      Data4: -1714000337
+    Path: event:/ObjectPickUp/TVPickUp
   Event: 
-  PlayEvent: 4
+  PlayEvent: 3
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -268,8 +268,8 @@ MonoBehaviour:
   AllowNonRigidbodyDoppler: 0
   Params: []
   OverrideAttenuation: 0
-  OverrideMinDistance: -1
-  OverrideMaxDistance: -1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &5713953233355763945 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3d33034c3ea3ea84599edefc5e828c63, type: 3}

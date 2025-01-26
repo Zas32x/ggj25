@@ -210,6 +210,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d317f077af884dc419c01ee4b45c2d78, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4075286802200703504}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d317f077af884dc419c01ee4b45c2d78, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 422793976239384585}
     - targetCorrespondingSourceObject: {fileID: 4785803940390184481, guid: d317f077af884dc419c01ee4b45c2d78, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1305697864318463853}
@@ -649,6 +652,37 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 0
   OverrideMaxDistance: 10
+--- !u!114 &422793976239384585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2506849472658494835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 191826513
+      Data2: 1273216114
+      Data3: 424724128
+      Data4: -208601788
+    Path: event:/ObjectPickUp/FridgePickUp
+  Event: 
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &2772795728128896192 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8614958893623835422, guid: d317f077af884dc419c01ee4b45c2d78, type: 3}
