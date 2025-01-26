@@ -15,8 +15,12 @@ public class HUD : MonoBehaviour
     private IEnumerator currentEnumeration = null;
     private float lastPercentage = 0;
     
-    void Start()
+    void Update()
     {
+        if (Input.GetButton("ContinueGame") || Input.GetButton("QuitGame"))
+        { 
+            progressLabel.gameObject.SetActive(false);
+        }
     }
 
     public void UpdateProgress(float progressAmount)
@@ -27,7 +31,7 @@ public class HUD : MonoBehaviour
             CompletionText completion = completions[i];
             if (completion.percentage > lastPercentage && completion.percentage <= progressAmount)
             {
-                ShowProgress(completion, progressAmount >= 1 ? 0 : doneTextSeconds);
+                ShowProgress(completion, completion.keepVisible || progressAmount >= 1 ? 0 : doneTextSeconds);
                 break;
             }
         }
@@ -60,5 +64,6 @@ public class HUD : MonoBehaviour
     public struct CompletionText { 
         public string text;
         public float percentage;
+        public bool keepVisible;
     }
 }
