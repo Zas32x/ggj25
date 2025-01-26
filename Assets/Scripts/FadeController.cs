@@ -13,6 +13,9 @@ public class FadeController : MonoBehaviour
     void Start()
     {
         image = GetComponent<Image>();
+        if (fadeInTime >= 0) {
+            StartFadeIn();
+        }
     }
 
     public void StartFade(int level)

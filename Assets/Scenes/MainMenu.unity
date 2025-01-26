@@ -1961,6 +1961,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 353761822}
     m_Modifications:
+    - target: {fileID: 724911435547559721, guid: d1027a4d6bb9faa40848f8d2919297dc, type: 3}
+      propertyPath: fadeInTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6063639839999471120, guid: d1027a4d6bb9faa40848f8d2919297dc, type: 3}
       propertyPath: m_Name
       value: Fade
