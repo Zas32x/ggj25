@@ -77,7 +77,7 @@ public class FurnitureBehaviour : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" && other.isTrigger)
         {
             container = null;
             //rb.useGravity = true;

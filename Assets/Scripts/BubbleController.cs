@@ -9,12 +9,25 @@ public class BubbleController : MonoBehaviour
     float maxSpeed = 25;
     float fallSpeed = 3;
     Vector3 velocity;
+    [SerializeField] BoxCollider suckArea;
+    Vector3 blackHoleRange = new Vector3(100, 100, 100);
+    Vector3 normalRange;
+    bool isBlackHole = false;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        normalRange = suckArea.size;
+    }
+
+    private void Update()
+    {
+        if (Input.GetButtonDown("Submit"))
+        {
+            ToggleBlackHoleMode();
+        }
     }
 
     // Update is called once per frame
@@ -48,5 +61,18 @@ public class BubbleController : MonoBehaviour
     {
         //Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA velocity: " + rb.linearVelocity + " vs. " + velocity);
         rb.linearVelocity = Vector3.Reflect(velocity * 0.5f, collision.contacts[0].normal);
+    }
+
+    private void ToggleBlackHoleMode()
+    {
+        isBlackHole = !isBlackHole;
+        if (isBlackHole)
+        {
+            suckArea.size = blackHoleRange;
+        }
+        else
+        {
+            suckArea.size = normalRange;
+        }
     }
 }

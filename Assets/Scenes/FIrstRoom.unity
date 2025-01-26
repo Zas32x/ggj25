@@ -650,6 +650,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6660119929429007459, guid: f9a386737d0ca5c42877f9644ac0a622, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1359,6 +1363,10 @@ PrefabInstance:
     - target: {fileID: 1939310596699734331, guid: c75986931597fef46a0b92b6b8a83a77, type: 3}
       propertyPath: m_Name
       value: EmptyGalaxyCola
+      objectReference: {fileID: 0}
+    - target: {fileID: 9122617990543460969, guid: c75986931597fef46a0b92b6b8a83a77, type: 3}
+      propertyPath: m_Mass
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2254,6 +2262,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GalaxyCola
       objectReference: {fileID: 0}
+    - target: {fileID: 6677493369306510056, guid: b4593615da5b7c040a8dfda1f29e3ac6, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2837,6 +2849,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble
       objectReference: {fileID: 0}
+    - target: {fileID: 8410395865685660034, guid: b4a5372737b35344fb404f9e5bc670c9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3316,6 +3332,10 @@ PrefabInstance:
     - target: {fileID: 3503436916097380702, guid: cd7a2659f962654448add4a109ae495a, type: 3}
       propertyPath: m_Name
       value: tv-bench
+      objectReference: {fileID: 0}
+    - target: {fileID: 3547804421841221542, guid: cd7a2659f962654448add4a109ae495a, type: 3}
+      propertyPath: m_Mass
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4311464354341530596, guid: cd7a2659f962654448add4a109ae495a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3997,6 +4017,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EmptyGalaxyCola (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 9122617990543460969, guid: c75986931597fef46a0b92b6b8a83a77, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4332,6 +4356,10 @@ PrefabInstance:
     - target: {fileID: 4096275493984434618, guid: b4593615da5b7c040a8dfda1f29e3ac6, type: 3}
       propertyPath: m_Name
       value: GalaxyCola (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6677493369306510056, guid: b4593615da5b7c040a8dfda1f29e3ac6, type: 3}
+      propertyPath: m_Mass
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4849,6 +4877,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SingleBed
       objectReference: {fileID: 0}
+    - target: {fileID: 6795916322935439208, guid: b2c0b89fdfdb5b24d81ff09b6299c834, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4902,6 +4934,7 @@ GameObject:
   - component: {fileID: 29325784332218368}
   - component: {fileID: 8565777259646014724}
   - component: {fileID: 9131337897306313233}
+  - component: {fileID: 9131337897306313234}
   m_Layer: 3
   m_Name: Bubble
   m_TagString: Player
@@ -4958,6 +4991,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3018caa48f80614e88aee3c54b4a0b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  suckArea: {fileID: 9131337897306313234}
+--- !u!65 &9131337897306313234
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8410395864452595383}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.2, y: 1.2, z: 1.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -5023,3 +5078,4 @@ SceneRoots:
   - {fileID: 1395858120}
   - {fileID: 1099062388}
   - {fileID: 873772165}
+  - {fileID: 1267199797}
