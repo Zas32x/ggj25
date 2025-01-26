@@ -47,6 +47,6 @@ public class BubbleController : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         //Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA velocity: " + rb.linearVelocity + " vs. " + velocity);
-        rb.linearVelocity = Vector3.Reflect(velocity, collision.contacts[0].normal);
+        rb.linearVelocity = Vector3.Reflect(velocity * 0.9f, collision.contacts[0].normal);
     }
 }
