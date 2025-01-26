@@ -47,9 +47,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   progress: {fileID: 7986466251219031878}
-  done70: {fileID: 3100135373961990537}
-  done100: {fileID: 7923700503033583349}
+  progressLabel: {fileID: 3100135373961990537}
   doneTextSeconds: 7
+  completions:
+  - text: '%25 Keep up the work!'
+    percentage: 0.25
+  - text: '%50 Half way there!'
+    percentage: 0.5
+  - text: '%75 Almost done, you got this!'
+    percentage: 0.75
+  - text: '%90 A little bit left!'
+    percentage: 0.9
+  - text: '%100 done. Good job! You managed to move the entire home!'
+    percentage: 1
 --- !u!114 &497342850382908797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,11 +72,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad5857f04fc46f380be65ed78c77f52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  victoryPercentage: 0.7
   endGameTimeout: 10
   hud: {fileID: 2219518981972533290}
   fadeController: {fileID: 8770028062603917233}
---- !u!1 &1910427086512317716
+--- !u!1 &1896866912632351646
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -74,23 +83,24 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7142757406702100627}
-  - component: {fileID: 8385214978240872002}
-  - component: {fileID: 7923700503033583349}
+  - component: {fileID: 8573960389688025423}
+  - component: {fileID: 3710334228765963512}
+  - component: {fileID: 3990667789222983951}
+  - component: {fileID: 6209159081068349444}
   m_Layer: 0
-  m_Name: 100% notification
+  m_Name: IntroText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &7142757406702100627
+  m_IsActive: 1
+--- !u!224 &8573960389688025423
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1910427086512317716}
+  m_GameObject: {fileID: 1896866912632351646}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -100,24 +110,24 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -20, y: 0}
+  m_AnchoredPosition: {x: 0, y: -25}
+  m_SizeDelta: {x: -20, y: -150}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &8385214978240872002
+--- !u!222 &3710334228765963512
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1910427086512317716}
+  m_GameObject: {fileID: 1896866912632351646}
   m_CullTransparentMesh: 1
---- !u!114 &7923700503033583349
+--- !u!114 &3990667789222983951
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1910427086512317716}
+  m_GameObject: {fileID: 1896866912632351646}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -131,9 +141,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100% done! Good job!
+  m_text: "Hi! Welcome to the Bubbles Moving Company where we exclusively hire bubbles
+    to help people move!\r\n\r\nControls:\r\n\r\n Move -  WASD\r\n Camera  - Mouse\r\n
+    Float up - Space"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9ed457d745b2fb041a25b89f9207134e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -158,8 +170,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -199,9 +211,24 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &6209159081068349444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896866912632351646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2dded0bd2864ec42a75b15aee3e350e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 3990667789222983951}
+  duration: 10
+  fadeTime: 0.5
 --- !u!1 &3769311089259806542
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,7 +241,7 @@ GameObject:
   - component: {fileID: 8480811657112472499}
   - component: {fileID: 3100135373961990537}
   m_Layer: 0
-  m_Name: 70% notification
+  m_Name: Completion notification
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -267,7 +294,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Done! You could still get 100% of the items if you want.
+  m_text: :)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9ed457d745b2fb041a25b89f9207134e, type: 2}
   m_sharedMaterial: {fileID: -9021717893427018991, guid: 9ed457d745b2fb041a25b89f9207134e, type: 2}
@@ -508,8 +535,8 @@ RectTransform:
   m_Children:
   - {fileID: 1656634184245244492}
   - {fileID: 4636385742844792509}
-  - {fileID: 7142757406702100627}
   - {fileID: 3228127624977090079}
+  - {fileID: 8573960389688025423}
   m_Father: {fileID: 6242448683265570559}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -726,7 +753,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 724911435547559721, guid: d1027a4d6bb9faa40848f8d2919297dc, type: 3}
       propertyPath: fadeInTime
-      value: 1
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6063639839999471120, guid: d1027a4d6bb9faa40848f8d2919297dc, type: 3}
       propertyPath: m_Name
