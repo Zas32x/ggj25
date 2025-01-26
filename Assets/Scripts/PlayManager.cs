@@ -50,6 +50,8 @@ public class PlayManager : MonoBehaviour
     {
         bubble = FindAnyObjectByType<BubbleController>();
         StartCoroutine(AllowMovement());
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     private IEnumerator AllowMovement() {
@@ -60,6 +62,11 @@ public class PlayManager : MonoBehaviour
 
     public void Update()
     {
+        if (Input.GetButton("LeaveGame") &&!ending)
+        {
+            ending = true;
+            StartCoroutine(EndLevel(0));
+        }
         if (victoryAchieved && !ending)
         {
             if (Input.GetButton("ContinueGame"))
