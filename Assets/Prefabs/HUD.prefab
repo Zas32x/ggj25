@@ -54,10 +54,9 @@ MonoBehaviour:
     percentage: 0.25
   - text: '%50 Half way there!'
     percentage: 0.5
-  - text: '%75 Almost done, you got this!'
+  - text: '%75 Congrats! You have reached your mandatory quota. Press X to finish
+      the game or press Y to continue and try to get %100.'
     percentage: 0.75
-  - text: '%90 A little bit left!'
-    percentage: 0.9
   - text: '%100 done. Good job! You managed to move the entire home!'
     percentage: 1
 --- !u!114 &497342850382908797
