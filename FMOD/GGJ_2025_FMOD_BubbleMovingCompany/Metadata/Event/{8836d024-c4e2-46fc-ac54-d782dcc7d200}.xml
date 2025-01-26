@@ -146,7 +146,7 @@
 			<value>-24.5</value>
 		</property>
 		<property name="dryLevel">
-			<value>-11</value>
+			<value>0</value>
 		</property>
 		<relationship name="referenceableData">
 			<destination>{debf35e0-25d8-429e-80dd-33c49814df2c}</destination>
@@ -176,9 +176,6 @@
 	<object class="RandomizerModulator" id="{6cd0b7ec-9d4c-4cad-b095-a00766bf09db}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>pitch</value>
-		</property>
-		<property name="amount">
-			<value>57.5</value>
 		</property>
 	</object>
 	<object class="SingleSound" id="{23868695-b403-4330-85d0-396c317650b3}">
@@ -291,18 +288,18 @@
 	</object>
 	<object class="AutomationPoint" id="{daf37e86-8641-441d-9bc0-3f93cb619f3b}">
 		<property name="position">
-			<value>0</value>
+			<value>1.3999999999999999</value>
 		</property>
 		<property name="value">
-			<value>-24</value>
+			<value>0</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{f62adcae-1f91-4d4d-8813-4a05e24cf3a0}">
 		<property name="position">
-			<value>1</value>
+			<value>5</value>
 		</property>
 		<property name="value">
-			<value>-10</value>
+			<value>14</value>
 		</property>
 	</object>
 </objects>

@@ -1,4 +1,6 @@
 using UnityEngine;
+using FMOD;
+using FMODUnity;
 
 public class CameraController : MonoBehaviour
 {
@@ -9,11 +11,13 @@ public class CameraController : MonoBehaviour
 
     [SerializeField] GameObject pivot;
     [SerializeField] GameObject target;
+    [SerializeField] StudioListener listener;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        listener = GetComponent<StudioListener>();
+        listener.enabled = false;
     }
 
     // Update is called once per frame

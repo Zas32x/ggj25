@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="ParameterPreset" id="{a44accf2-d76e-49f7-a88e-b626994732ea}">
 		<property name="name">
-			<value>Spcae</value>
+			<value>Space</value>
 		</property>
 		<relationship name="folder">
 			<destination>{b9a698c6-d14a-47b7-bff9-f5e554029a1e}</destination>
@@ -12,8 +12,16 @@
 		</relationship>
 	</object>
 	<object class="GameParameter" id="{d8049a59-31c8-4812-8698-629c616ce7f8}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
 		<property name="maximum">
-			<value>5</value>
+			<value>3</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>Room</value>
+			<value>Kitchen</value>
+			<value>TV</value>
 		</property>
 		<property name="initialValue">
 			<value>0</value>

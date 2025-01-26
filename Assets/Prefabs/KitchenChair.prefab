@@ -777,7 +777,7 @@ MonoBehaviour:
       Data4: 1752297332
     Path: event:/Objects Drop/ChairDrop
   Event: 
-  PlayEvent: 4
+  PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
