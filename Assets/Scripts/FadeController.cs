@@ -32,4 +32,23 @@ public class FadeController : MonoBehaviour
         image.color = Color.black;
         GameManager.Instance.FadeActionHandler(level);
     }
+
+    public void StartFadeIn(float initialDelay = 0)
+    {
+        StartCoroutine(FadeIn(initialDelay));
+    }
+    
+    IEnumerator FadeIn(float initialDelay)
+    {
+        float t = -initialDelay;
+
+        while (t < fadeTime)
+        {
+            t += Time.deltaTime;
+            image.color = new Color(0, 0, 0,Mathf.Clamp( 1 - t / fadeTime,0,1));
+            yield return null;
+        }
+
+        image.color = Color.clear;
+    }
 }
