@@ -11,6 +11,8 @@
 /[Uu]ser[Ss]ettings/
 /Assets/FMOD/*/*.meta
 /BubbleMovingCompany/
+/Build.zip
+/BubbleMovingCompany.zip
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
