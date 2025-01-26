@@ -27,6 +27,10 @@ public class PlayManager : MonoBehaviour
         }
     }
 
+    public void Start()
+    {
+    }
+
     public void RegisterFurniture()
     {
         ++furnitureCount;
