@@ -79,8 +79,8 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
-    - _blackFade: -0.2
-    - _blackStart: 3.14
+    - _blackFade: -0.05
+    - _blackStart: -13.44
     - _blurSize: 1.47
     - _hideCloseWalls: 1
     - _holeSize: 5.13
