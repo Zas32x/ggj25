@@ -21,7 +21,7 @@ public class FurnitureBehaviour : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
 
-        GameManager.Instance.RegisterFurniture();
+        PlayManager.Instance.RegisterFurniture();
     }
 
     // Update is called once per frame
@@ -70,7 +70,7 @@ public class FurnitureBehaviour : MonoBehaviour
         if (other.tag == "Goal" && !sentOut)
         {
             sentOut = true;
-            GameManager.Instance.FurnitureMovedOut();
+            PlayManager.Instance.FurnitureMovedOut();
             Destroy(gameObject);
         }
     }
