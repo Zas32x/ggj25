@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5557056010440215970}
   - component: {fileID: 7801421764111042470}
   - component: {fileID: 8860161733270893221}
+  - component: {fileID: 4922640338186869482}
   m_Layer: 0
   m_Name: Plate
   m_TagString: Untagged
@@ -173,3 +174,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.029564219, y: 0.025452413, z: 0.0025192285}
   m_Center: {x: 0.00023235481, y: 0.0010034234, z: 0.0019876137}
+--- !u!114 &4922640338186869482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3035301975298341786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1976603525
+      Data2: 1139057326
+      Data3: -1885159036
+      Data4: 285116340
+    Path: event:/Objects Drop/PlateDrop
+  Event: 
+  PlayEvent: 4
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20

@@ -240,6 +240,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6339176848074035900}
+  - component: {fileID: -3902721035892170176}
   m_Layer: 7
   m_Name: Table
   m_TagString: Untagged
@@ -263,6 +264,37 @@ Transform:
   - {fileID: 4921046487647185714}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &-3902721035892170176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454130141345580955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 489305078
+      Data2: 1143508289
+      Data3: 1170145409
+      Data4: -2140945538
+    Path: event:/Objects Drop/TableDrop
+  Event: 
+  PlayEvent: 4
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &2432756292131066377
 GameObject:
   m_ObjectHideFlags: 0
