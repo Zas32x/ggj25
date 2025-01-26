@@ -667,6 +667,7 @@ GameObject:
   - component: {fileID: 7274186563457007955}
   - component: {fileID: 311972493426913804}
   - component: {fileID: 3066466042812725882}
+  - component: {fileID: 1392911804448735439}
   m_Layer: 0
   m_Name: KitchenChair
   m_TagString: Untagged
@@ -755,3 +756,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.038033556, y: 0.025628017, z: 0.068682715}
   m_Center: {x: 0.0027578378, y: 0.0022718431, z: 0.06926199}
+--- !u!114 &1392911804448735439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7925839081773668853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 795683397
+      Data2: 1291915517
+      Data3: 1974304434
+      Data4: 1752297332
+    Path: event:/Objects Drop/ChairDrop
+  Event: 
+  PlayEvent: 4
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20

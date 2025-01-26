@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 474707843020972032}
   - component: {fileID: 7571780512615749907}
   - component: {fileID: 8455711737551879506}
+  - component: {fileID: 2478350559695928401}
   m_Layer: 0
   m_Name: Oven
   m_TagString: Untagged
@@ -235,6 +236,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1.2529013, z: 1}
   m_Center: {x: 0, y: 0.8134819, z: 0}
+--- !u!114 &2478350559695928401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650247275182977756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1326057220
+      Data2: 1150954337
+      Data3: -1255045481
+      Data4: -623846964
+    Path: event:/Objects Drop/OvenDrop
+  Event: 
+  PlayEvent: 4
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &714368115501524606
 GameObject:
   m_ObjectHideFlags: 0

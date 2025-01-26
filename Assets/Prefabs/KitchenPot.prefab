@@ -270,6 +270,7 @@ GameObject:
   - component: {fileID: 8554336411664589597}
   - component: {fileID: 1987506179808887925}
   - component: {fileID: 3773515266933848577}
+  - component: {fileID: -8780049007985306508}
   m_Layer: 0
   m_Name: KitchenPot
   m_TagString: Untagged
@@ -439,6 +440,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.029938942, y: 0.029859537, z: 0.015634544}
   m_Center: {x: 0.0002488265, y: -0.0020450812, z: 0.010942132}
+--- !u!114 &-8780049007985306508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2685603364670066157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 411665709
+      Data2: 1336167944
+      Data3: 577867158
+      Data4: 254410485
+    Path: event:/Objects Drop/PanDrop
+  Event: 
+  PlayEvent: 4
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &2886030212293690509
 GameObject:
   m_ObjectHideFlags: 0
