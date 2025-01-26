@@ -52,13 +52,17 @@ MonoBehaviour:
   completions:
   - text: '%25 Keep up the work!'
     percentage: 0.25
+    keepVisible: 0
   - text: '%50 Half way there!'
     percentage: 0.5
+    keepVisible: 0
   - text: '%75 Congrats! You have reached your mandatory quota. Press X to finish
       the game or press Y to continue and try to get %100.'
     percentage: 0.75
+    keepVisible: 0
   - text: '%100 done. Good job! You managed to move the entire home!'
     percentage: 1
+    keepVisible: 0
 --- !u!114 &497342850382908797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,8 +76,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endGameTimeout: 10
+  allowMovementAfterTime: 10
   hud: {fileID: 2219518981972533290}
   fadeController: {fileID: 8770028062603917233}
+  victoryPercent: 0.75
 --- !u!1 &1896866912632351646
 GameObject:
   m_ObjectHideFlags: 0
@@ -144,8 +150,8 @@ MonoBehaviour:
     to help people move!\r\n\r\nControls:\r\n\r\n Move -  WASD\r\n Camera  - Mouse\r\n
     Float up - Space"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9ed457d745b2fb041a25b89f9207134e, type: 2}
+  m_sharedMaterial: {fileID: -9021717893427018991, guid: 9ed457d745b2fb041a25b89f9207134e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
