@@ -1,4 +1,7 @@
 using System.Collections;
+using System.Collections.Generic;
+using FMODUnity;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayManager : MonoBehaviour
@@ -13,6 +16,16 @@ public class PlayManager : MonoBehaviour
     private FadeController fadeController;
     [SerializeField]
     private float victoryPercent=0.75f;
+
+    [SerializeField]
+    private int allowedSounds = 3;
+
+    private int soundPool = 0;
+    private WaitForSeconds soundWait = new(0.2f);
+
+    private bool soundAllowed;
+    
+    private List<StudioEventEmitter> studioEventEmitters=new();
 
     private BubbleController bubble;
      
@@ -42,6 +55,7 @@ public class PlayManager : MonoBehaviour
     private IEnumerator AllowMovement() {
         yield return new WaitForSeconds(allowMovementAfterTime);
         bubble.AllowMovement();
+        soundAllowed = true;
     }
 
     public void Update()
@@ -59,9 +73,50 @@ public class PlayManager : MonoBehaviour
         }
     }
 
-    public void RegisterFurniture()
-    {
+    public void RegisterFurniture(FurnitureBehaviour furniture) {
+        foreach (StudioEventEmitter emitter in furniture.GetComponentsInChildren<StudioEventEmitter>()) {
+                if (emitter.PlayEvent == EmitterGameEvent.TriggerEnter) {
+                    studioEventEmitters.Add(emitter);
+                    furniture.setTriggerEnterSound(emitter);
+                } else if (emitter.PlayEvent == EmitterGameEvent.TriggerExit) {
+                    studioEventEmitters.Add(emitter);
+                    furniture.setTriggerExitSound(emitter);
+                }
+                emitter.PlayEvent = 0;
+
+        }
         ++furnitureCount;
+    }
+
+    public bool requestSound(StudioEventEmitter emitter) {
+        if (!soundAllowed) {
+            return false;
+        }
+
+        if (soundPool < allowedSounds) {
+            emitter.Play();
+            soundPool++;
+            StartCoroutine(FreeSoundPool());
+        }
+/*
+        int playing = 0;
+        foreach (StudioEventEmitter emitter in studioEventEmitters) {
+            if (emitter.IsPlaying()) {
+                playing++;
+            }
+        }
+        Debug.Log(playing);
+        if (playing >= allowedSounds) {
+            return false;
+        }
+*/
+        return true;
+    }
+
+    private IEnumerator FreeSoundPool() {
+        yield return soundWait;
+
+        soundPool--;
     }
 
     public void FurnitureMovedOut()
