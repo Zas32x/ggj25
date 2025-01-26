@@ -57,7 +57,11 @@
 			<destination>{bc1bd5bd-3494-4537-b248-9a7558afdde3}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{f71af702-cdb8-4f2c-bb2d-9bd5a4f61054}" />
+	<object class="EventAutomatableProperties" id="{f71af702-cdb8-4f2c-bb2d-9bd5a4f61054}">
+		<property name="isPersistent">
+			<value>true</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{c9924908-b40c-4ed5-aa3c-cafff5e40ffc}" />
 	<object class="GroupTrack" id="{125b80fd-f894-4d30-8051-4a56f34d196b}">
 		<relationship name="modules">
@@ -174,7 +178,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{0b142789-0d5b-47ba-80d7-35e87ddf99a4}">
 		<property name="volume">
-			<value>-20</value>
+			<value>-7.5</value>
 		</property>
 		<property name="name">
 			<value>Audio 2</value>
@@ -269,10 +273,23 @@
 	</object>
 	<object class="MixerBusPanner" id="{8f4aeff2-1fd5-47cd-9967-7a8f5d2b21a2}" />
 	<object class="MixerBusFader" id="{3e7d21a3-60a2-4658-b7aa-cde553e3f495}" />
-	<object class="SpatialiserEffect" id="{78853b90-8aec-4f7b-ba4d-9fcb06309d5b}" />
+	<object class="SpatialiserEffect" id="{78853b90-8aec-4f7b-ba4d-9fcb06309d5b}">
+		<property name="minimumDistance">
+			<value>0</value>
+		</property>
+		<property name="maximumDistance">
+			<value>10</value>
+		</property>
+		<property name="overrideRange">
+			<value>true</value>
+		</property>
+	</object>
 	<object class="ThreeEQEffect" id="{5821f3b5-daf9-4476-9c3d-bd888c42dcf5}">
 		<property name="lowGain">
-			<value>-22.5</value>
+			<value>-21.5</value>
+		</property>
+		<property name="midGain">
+			<value>4.5</value>
 		</property>
 		<property name="lowCrossover">
 			<value>280</value>
